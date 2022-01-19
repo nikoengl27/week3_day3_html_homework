@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/style.css">
+    <title>{{title}} - Order List</title>
+</head>
+<body>
+    <h1>Order List!</h1>
+
+    {% for order in newOrders %}
+        <div>
+            <p>
+                <a href="http://localhost:5000/orders/{{newOrders.index(order)}}">{{order.custId}}</a>
+            </p>
+            <div>
+            <p>
+                {{order.customername}}, {{order.date}}, {{order.quantity}}
+            </p>
+            </div>
+        </div>
+    {% endfor %}
+    
+</body>
+<footer>
+    <div class="tenor-gif-embed" data-postid="8196394" data-share-method="host" data-aspect-ratio="1.33077" data-width="100%">
+        <a href="https://tenor.com/view/skipping-water-excited-going-home-gif-8196394">Skipping Water GIF</a>
+        from <a href="https://tenor.com/search/skipping-gifs">Skipping GIFs</a>
+    </div> 
+    <script type="text/javascript" async src="https://tenor.com/embed.js">
+        
+    </script>
+    </div>
+</footer>
+</html>
